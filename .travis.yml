@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+berfore_install:
+  - docker build -t gandi12/udemy-react-project:latest -f Dockerfile.dev .
+
+
+script:
+  - docker run gandi12/udemy-react-project:latest npm run test -- --coverage
