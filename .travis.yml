@@ -7,4 +7,4 @@ berfore_install:
 
 
 script:
-  - docker run gandi12/udemy-react-project:latest npm run test -- --coverage
+  - docker run -e CI=true gandi12/udemy-react-project:latest npm run test
