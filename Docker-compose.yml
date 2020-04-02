@@ -13,7 +13,7 @@ services:
             - .:/app
     gandi-simple-web:
         build:
-            context: ~/Simple-Web
+            context: Simple-Web/
             dockerfile: Dockerfile
         stdin_open: true
         tty: true            
